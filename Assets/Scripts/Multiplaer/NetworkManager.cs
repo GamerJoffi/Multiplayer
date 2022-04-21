@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ServerToClientId : ushort
+{
+    playerSpawned = 1,
+}
+
 public enum CliendToServerId : ushort
 {
     name = 1,
@@ -26,6 +31,8 @@ public class NetworkManager : MonoBehaviour
             }
         }
     }
+
+
 
     public Server Server { get; private set; }
 
